@@ -10,16 +10,31 @@ body {
 :root {
 
     --color-background: #011222;
+
     --color-backgroundforlogo: #00376B;
     --color-filterbackgrund: #616161;
-    --icons-color: #FFB100;
 
+    --color-filter:#00376bad;
+    --color-filter2:#616161cc;
+
+    --icons-color: #FFB100;
+    --icons-filter: #e4a618;
+
+
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/font/Rubik-Light.woff2') format('woff2'),
+        url('/font/Rubik-Light.woff') format('woff');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 
 
-
-/* start one */
+/*  logo deign  */
 .chapter {
     
     width: 83.9em;
@@ -52,7 +67,7 @@ content: 'نسخة تجريبية';
 }
 
 .logo h1,
-h3 {
+h2 {
     font-weight: normal;
     text-align: center;
 }
@@ -90,7 +105,7 @@ h3 {
 }
 
 
-.logo h3 {
+.logo h2 {
     margin-top: 0;
     font-size: 2em;
    
@@ -100,11 +115,11 @@ h3 {
 }
 
 
-/* end one */
+/* logo deign */
 
-/* start tuo */
+/* start one */
 
-.uu {
+.ax1 {
     z-index: 1;
     background-image: url(/img/uone.webp);
     background-size: cover;
@@ -116,19 +131,19 @@ h3 {
 
 }
 
-.uu::before {
+.ax1::before {
     content: '';
     position: absolute;
     left: 0;
     top: 0;
     font-weight: normal;
-    background-color: #00376bad;
+    background-color: var(--color-filter);
     width: 100%;
     height: 100%;
     z-index: -1;
 }
 
-.uu h2 {
+.ax1 h2 {
 
     font-size: 3em;
     padding: 20px;
@@ -138,7 +153,7 @@ h3 {
         animation-range: entry 0% cover 40%;
 }
 
-.uu p {
+.ax1 p {
 
     width: 45em;
     margin: auto;
@@ -149,11 +164,11 @@ h3 {
         animation-range: entry 0% cover 40%;
 }
 
-/* end tuo */
+/* end one */
 
-/* start  terra */
+/* start  tuo */
 
-.uf{
+.ax2{
     background-image: url(/img/usix.webp);
     background-size: cover;
     position: relative;
@@ -165,7 +180,7 @@ h3 {
 
 }
 
-.uf::before{
+.ax2::before{
     content: '';
     position: absolute;
     z-index: -1;
@@ -173,9 +188,9 @@ h3 {
     height: 100%;
     left: 0;
     top: 0;
-    background-color: #616161cc;
+    background-color: var(--color-filter2);
 }
-.uf h2 {
+.ax2 h2 {
     font-size: 3em;
         margin-right: 25px;
         margin-bottom: 0;
@@ -184,7 +199,7 @@ h3 {
         animation-range: entry 0% cover 40%;
 }
 
-.uf p{
+.ax2 p{
       width: 45em;
     margin: auto;
     margin-top: 20px;
@@ -195,11 +210,11 @@ h3 {
         animation-range: entry 0% cover 40%;
 }
 
-/* end  terra */
+/* end  tuo */
 
-/* start fora  */
+/* start terra  */
 
-.uo {
+.ax3 {
     background-image: url(/img/utwo.webp);
     background-size: 100%;
     background-position: 0px;
@@ -214,7 +229,7 @@ h3 {
 
 }
 
-.uo::before {
+.ax3::before {
     content: '';
     position: absolute;
     z-index: -1;
@@ -222,10 +237,10 @@ h3 {
     height: 100%;
     left: 0;
     top: 0;
-    background-color: #00376bad;
+    background-color: var(--color-filter);
 }
 
-.uo h2 {
+.ax3 h2 {
     font-size: 3em;
     padding: 20px;
     margin: 0;
@@ -237,7 +252,7 @@ h3 {
         animation-timeline: view();
         animation-range: entry 0% cover 40%;
 }
-.uo nav {
+.ax3 nav {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -251,17 +266,17 @@ h3 {
         animation-range: entry 0% cover 40%;
 }
 
-.uo nav div i {
+.ax3 nav div i {
 
     color: var(--icons-color);
     font-size: 40px;
 }
 
-/* end fora */
+/* end terra */
 
-/* start five */
+/* start fore */
 
-.ut {
+.ax4 {
     background-image: url(/img/uthree.webp);
     background-size: cover;
     position: relative;
@@ -272,13 +287,13 @@ h3 {
     z-index: 1;
 }
 
-.ut::before {
+.ax4::before {
     content: '';
     position: absolute;
     left: 0;
     top: 0;
     font-weight: normal;
-    background-color: #616161cc;
+    background-color: var(--color-filter2);
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -286,7 +301,7 @@ h3 {
 
 
 
-.ut h2 {
+.ax4 h2 {
     font-size: 3em;
     margin-right: 28px;
     margin-bottom: 30px;
@@ -295,7 +310,7 @@ h3 {
         animation-range: entry 0% cover 40%;
 }
 
-.ut nav {
+.ax4 nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -307,12 +322,12 @@ h3 {
         animation-range: entry 0% cover 40%;
 }
 
-.ut nav p {
+.ax4 nav p {
 
      width: 295px;
     text-align: center;
     font-size: 1.5em;
-    border-bottom: 5px solid #FFB100;
+    border-bottom: 5px solid var(--icons-color);
     border-radius: 35px;
     padding: 10px;
     align-content: center;
@@ -320,11 +335,11 @@ h3 {
 }
 
 
-/* end five */
+/* end fore */
 
-/* start six */
+/* start five */
 
-.utt {
+.ax5 {
     background-image: url(/img/ufour.webp);
     background-size: cover;
     position: relative;
@@ -335,7 +350,7 @@ h3 {
     z-index: 1;
 }
 
-.utt::before{
+.ax5::before{
     content: '';
     position: absolute;
     z-index: -1;
@@ -343,9 +358,9 @@ h3 {
     height: 100%;
     left: 0;
     top: 0;
-    background-color: #00376bad;
+    background-color: var(--color-filter);
 }
-.utt h2 {
+.ax5 h2 {
     font-size: 3em;
         margin-right: 25px;
         margin-bottom: 0;
@@ -354,7 +369,7 @@ h3 {
         animation-range: entry 0% cover 40%;
 }
 
-.utt nav {
+.ax5 nav {
 
     display: flex;
     justify-content: space-evenly;
@@ -364,28 +379,29 @@ h3 {
         animation-range: entry 0% cover 40%;
 }
 
-.utt nav p {
+.ax5 nav p {
     width: 150px;
     text-align: center;
-    background-color: #e4a618;
+    background-color: var(--icons-filter);
     border-radius: 40px 0px 40px 0;
     padding: 10px;
     font-size: 1.3em;
     align-content: center;
 }
 
-.utt nav p:hover{
+.ax5 nav p:hover{
 
      background-color: #c48f14;
+
      transform: scale(1.5);
 }
 
-/* end six */
+/* end five */
 
 
-/* start seven */
+/* start six */
 
-.uuf{
+.ax6{
     background-image: linear-gradient(to bottom, #011222, #00376B);
     display: flex;
     flex-direction: column;
@@ -395,48 +411,48 @@ h3 {
     flex-wrap: wrap;
 }
 
-.uuf .icons{
+.ax6 .icons{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.uuf .icons .icon{
+.ax6 .icons .icon{
   display: flex;
     flex-direction: column;
     align-items: center;
    margin: 20px;
 }
 
-.uuf i {
+.ax6 i {
 
-    color: #FFB100;
+    color: var(--icons-color);
     font-size: 50px;
      transition: color 0.5s;
 }
 
-.uuf i:hover{
+.ax6 i:hover{
     color: #815b01;
 }
 
-.uuf a{
+.ax6 a{
 
     text-decoration: none;
     font-size: 15px;
-    color: #FFB100;
+    color: var(--icons-color);
     transition: color 0.5s;
 }
 
-.uuf a:hover{
+.ax6 a:hover{
 
     color: #815b01;
 }
-.uuf h4{
-    color: #FFB100;
+.ax6 h4{
+    color: var(--icons-color);
 }
 
-/* end seven */
+/* end six */
 
       @keyframes appear {
         from {
@@ -454,123 +470,101 @@ h3 {
 
     /* ========== Responsive Design ========== */
 
-/* الهواتف الصغيرة - أقل من 576px */
-@media (max-width: 575.98px) {
+@media (max-width: 480px) {
   .chapter {
     width: 100%;
-    padding: 10px;
     height: auto;
+    padding: 20px 10px;
   }
 
   .logo h1 {
     font-size: 2.5em;
   }
 
-  .logo h3 {
-    font-size: 1.1em;
+  .logo h2 {
+    font-size: 1.2em;
   }
 
   .logo::before {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 5px;
+    left: 10px;
+    top: 10px;
     font-size: 0.7em;
   }
 
-  .uu h2,
-  .uf h2,
-  .uo h2,
-  .ut h2,
-  .utt h2 {
-    font-size: 1.5em;
-    text-align: center;
+  .ax1 h2,
+  .ax2 h2,
+  .ax3 h2,
+  .ax4 h2,
+  .ax5 h2 {
+    font-size: 1.8em;
     padding: 10px;
   }
 
-  .uu p,
-  .uf p {
-    width: 90%;
+  .ax1 p,
+  .ax2 p,
+  .ax3 p,
+  .ax4 nav p,
+  .ax5 nav p {
     font-size: 1em;
-    text-align: center;
+    width: 90%;
+    margin: 10px auto;
   }
 
-  .uo nav,
-  .ut nav,
-  .utt nav {
+  .ax3 nav,
+  .ax4 nav,
+  .ax5 nav {
     flex-direction: column;
     gap: 10px;
     padding: 10px;
-    align-items: center;
   }
 
-  .uo nav {
-    font-size: 1em;
-  }
-
-  .ut nav p,
-  .utt nav p {
-    width: 90%;
-    font-size: 1.1em;
-    padding: 8px;
-  }
-
-  .uuf .icons {
-    justify-content: center;
-  }
-
-  .uuf .icons .icon {
-    margin: 10px;
-  }
-
-  .uuf i {
+  .ax6 i {
     font-size: 30px;
   }
 
-  .uuf a {
+  .ax6 a {
     font-size: 13px;
   }
 }
 
-/* الهواتف الكبيرة والتابلت العمودي - من 576px إلى 767.98px */
-@media (min-width: 576px) and (max-width: 767.98px) {
+/* التابلت */
+@media (min-width: 481px) and (max-width: 768px) {
   .chapter {
-    width: 100%;
-    padding: 20px;
+    width: 95%;
     height: auto;
   }
 
   .logo h1 {
-    font-size: 3.5em;
+    font-size: 4em;
   }
 
-  .logo h3 {
-    font-size: 1.3em;
+  .logo h2 {
+    font-size: 1.5em;
   }
 
-  .uu h2,
-  .uf h2,
-  .uo h2,
-  .ut h2,
-  .utt h2 {
-    font-size: 2em;
-    text-align: center;
-  }
-
-  .uu p,
-  .uf p {
-    width: 85%;
+  .ax1 p,
+  .ax2 p,
+  .ax3 p,
+  .ax4 nav p,
+  .ax5 nav p {
     font-size: 1.2em;
-    text-align: center;
+    width: 90%;
   }
 
-  .ut nav p,
-  .utt nav p {
-    width: 80%;
+  .ax3 nav,
+  .ax4 nav,
+  .ax5 nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ax6 i {
+    font-size: 40px;
   }
 }
 
-/* التابلت الأفقي واللابتوبات الصغيرة - من 768px إلى 991.98px */
-@media (min-width: 768px) and (max-width: 991.98px) {
+/* الشاشات المتوسطة (لابتوب صغير) */
+@media (min-width: 769px) and (max-width: 1024px) {
   .chapter {
     width: 90%;
   }
@@ -579,56 +573,25 @@ h3 {
     font-size: 5em;
   }
 
-  .logo h3 {
-    font-size: 1.5em;
-  }
-
-  .uu p,
-  .uf p {
-    width: 70%;
-    font-size: 1.3em;
-  }
-
-  .ut nav p,
-  .utt nav p {
-    width: 250px;
-    font-size: 1.3em;
-  }
-
-  .uo nav {
-    gap: 15px;
-    font-size: 1.2em;
-  }
-}
-
-/* لابتوبات متوسطة - من 992px إلى 1199.98px */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .chapter {
-    width: 80em;
-  }
-
-  .logo h1 {
-    font-size: 6em;
-  }
-
-  .logo h3 {
+  .logo h2 {
     font-size: 1.7em;
   }
 
-  .uu p,
-  .uf p {
-    width: 60%;
-    font-size: 1.4em;
+  .ax1 p,
+  .ax2 p,
+  .ax3 p,
+  .ax4 nav p,
+  .ax5 nav p {
+    font-size: 1.3em;
   }
 
-  .ut nav p,
-  .utt nav p {
-    width: 270px;
+  .ax6 i {
+    font-size: 45px;
   }
 }
 
-/* شاشات كبيرة جدًا - 1200px وفوق */
-@media (min-width: 1200px) {
+/* الشاشات الكبيرة (ديسكتوب) */
+@media (min-width: 1025px) {
   .chapter {
     width: 83.9em;
   }
@@ -639,16 +602,5 @@ h3 {
 
   .logo h3 {
     font-size: 2em;
-  }
-
-  .uu p,
-  .uf p {
-    width: 45em;
-    font-size: 1.5em;
-  }
-
-  .ut nav p,
-  .utt nav p {
-    width: 295px;
   }
 }
