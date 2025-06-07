@@ -6,3 +6,7 @@ We are a leading digital platform that brings together a select group of brokers
 
 ## Issue No. 1
 
+## Update #2
+1- The callback request has been modified to a local file.
+2- The callback names have been modified.
+3- The image size has been reduced.
