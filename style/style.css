@@ -5,6 +5,10 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+      font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 :root {
@@ -14,7 +18,7 @@ body {
     --color-backgroundforlogo: #00376B;
     --color-filterbackgrund: #616161;
 
-    --color-filter:#00376bad;
+    --color-filter:#00376ba9;
     --color-filter2:#616161cc;
 
     --icons-color: #FFB100;
@@ -23,14 +27,6 @@ body {
 
 }
 
-@font-face {
-    font-family: 'Rubik';
-    src: url('/font/Rubik-Light.woff2') format('woff2'),
-        url('/font/Rubik-Light.woff') format('woff');
-    font-weight: 100 900;
-    font-style: normal;
-    font-display: swap;
-}
 
 
 
@@ -75,43 +71,17 @@ h2 {
 .logo h1 {
     font-size: 7em;
     
-    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  
 }
 
-@-webkit-keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes tracking-in-expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 
 .logo h2 {
     margin-top: 0;
     font-size: 2em;
    
-            animation: appear linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+          
+     
 }
 
 
@@ -148,9 +118,7 @@ h2 {
     font-size: 3em;
     padding: 20px;
     margin-right: 6px;
-       animation: appear linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+     
 }
 
 .ax1 p {
@@ -159,9 +127,7 @@ h2 {
     margin: auto;
     margin-top: 20px;
     font-size: 1.5em;
-    animation: appear linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+
 }
 
 /* end one */
@@ -194,9 +160,7 @@ h2 {
     font-size: 3em;
         margin-right: 25px;
         margin-bottom: 0;
-           animation: appear linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+
 }
 
 .ax2 p{
@@ -205,9 +169,7 @@ h2 {
     margin-top: 20px;
     margin-bottom: 100px;
     font-size: 1.5em;
-    animation: appear linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+
 }
 
 /* end  tuo */
@@ -248,9 +210,7 @@ h2 {
     margin-top: 6px;
     margin-right: 5px;
 
-     animation: appear linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+
 }
 .ax3 nav {
     display: flex;
@@ -261,9 +221,6 @@ h2 {
     text-align: center;
     font-size: 23px;
 
-       animation: appear linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
 }
 
 .ax3 nav div i {
@@ -305,9 +262,7 @@ h2 {
     font-size: 3em;
     margin-right: 28px;
     margin-bottom: 30px;
-       animation: appear linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+ 
 }
 
 .ax4 nav {
@@ -317,9 +272,7 @@ h2 {
     justify-content: center;
     gap: 14px;
     margin-bottom: 20px;
-     animation: appear linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+   
 }
 
 .ax4 nav p {
@@ -364,9 +317,7 @@ h2 {
     font-size: 3em;
         margin-right: 25px;
         margin-bottom: 0;
-         animation: appear linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+
 }
 
 .ax5 nav {
@@ -374,9 +325,7 @@ h2 {
     display: flex;
     justify-content: space-evenly;
     align-items: stretch;
-   animation: appear linear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+
 }
 
 .ax5 nav p {
@@ -393,7 +342,7 @@ h2 {
 
      background-color: #c48f14;
 
-     transform: scale(1.5);
+     transform: scale(1.04);
 }
 
 /* end five */
@@ -430,6 +379,9 @@ h2 {
     color: var(--icons-color);
     font-size: 50px;
      transition: color 0.5s;
+      min-width: 48px;
+  min-height: 48px;
+  padding: 12px;
 }
 
 .ax6 i:hover{
@@ -442,28 +394,26 @@ h2 {
     font-size: 15px;
     color: var(--icons-color);
     transition: color 0.5s;
+     min-width: 48px;
+  min-height: 48px;
+  padding: 12px;
+  text-align: center;
+  display: flex;
 }
 
 .ax6 a:hover{
 
     color: #815b01;
 }
-.ax6 h4{
+
+
+.ax6 h3{
     color: var(--icons-color);
 }
 
 /* end six */
 
-      @keyframes appear {
-        from {
-          opacity: 0;
-          clip-path: inset(0 0 100% 100%);
-        }
-        to {
-          opacity: 1;
-          clip-path: inset(0 0 0 0);
-        }
-    }
+
 
 
 
@@ -509,6 +459,9 @@ h2 {
     width: 90%;
     margin: 10px auto;
   }
+    .ax2 p{
+      margin: 0 !important;
+    }
 
   .ax3 nav,
   .ax4 nav,
@@ -530,8 +483,10 @@ h2 {
 /* التابلت */
 @media (min-width: 481px) and (max-width: 768px) {
   .chapter {
-    width: 95%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-bottom: 5px;
   }
 
   .logo h1 {
@@ -542,13 +497,28 @@ h2 {
     font-size: 1.5em;
   }
 
+
   .ax1 p,
   .ax2 p,
   .ax3 p,
   .ax4 nav p,
   .ax5 nav p {
-    font-size: 1.2em;
-    width: 90%;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .ax4 nav {
+    width: 95% !important;
+    margin: auto !important;
+  }
+  .ax5 nav {
+    width: 95% !important;
+    margin: auto !important;
+  }
+  
+  .ax6 a{
+    padding: 0px;
   }
 
   .ax3 nav,
