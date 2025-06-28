@@ -10,3 +10,11 @@ We are a leading digital platform that brings together a select group of brokers
 1- The callback request has been modified to a local file.
 2- The callback names have been modified.
 3- The image size has been reduced.
+
+
+## Update 3
+1- The animation has been removed.
+2- The font has been changed from "Download" to "Recall."
+3- Accessibility has been improved.
+
+### (This update will not be uploaded to the hosting at all.)
