@@ -91,7 +91,7 @@ h2 {
 
 .ax1 {
     z-index: 1;
-    background-image: url(/img/uone.webp);
+    background-image: url(../img/uone.webp);
     background-size: cover;
     position: relative;
     color: #fff;
@@ -135,7 +135,7 @@ h2 {
 /* start  tuo */
 
 .ax2{
-    background-image: url(/img/usix.webp);
+    background-image: url(../img/usix.webp);
     background-size: cover;
     position: relative;
     color: #fff;
@@ -177,7 +177,7 @@ h2 {
 /* start terra  */
 
 .ax3 {
-    background-image: url(/img/utwo.webp);
+    background-image: url(../img/utwo.webp);
     background-size: 100%;
     background-position: 0px;
     background-position-y: -100px;
@@ -234,7 +234,7 @@ h2 {
 /* start fore */
 
 .ax4 {
-    background-image: url(/img/uthree.webp);
+    background-image: url(../img/uthree.webp);
     background-size: cover;
     position: relative;
     color: #fff;
@@ -293,7 +293,7 @@ h2 {
 /* start five */
 
 .ax5 {
-    background-image: url(/img/ufour.webp);
+    background-image: url(../img/ufour.webp);
     background-size: cover;
     position: relative;
     color: #fff;
@@ -574,3 +574,4 @@ h2 {
     font-size: 2em;
   }
 }
+
